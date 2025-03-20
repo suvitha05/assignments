@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', credentialsId: 'Github_credentials', url: 'https://github.com/suvitha05/assignments.git'
+                git branch: 'master', credentialsId: 'Github_credentials', url: 'https://github.com/suvitha05/assignments.git'
             }
         }
         stage('Build') {
